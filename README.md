@@ -43,13 +43,21 @@ It started as a simple idea: a small, relaxing game that is easy to pick up, sat
 
 1. Download or clone this repository.
 2. Open the project root in Android Studio (the folder containing `settings.gradle.kts`).
-3. Let Android Studio sync the Gradle project.
-4. Select an Android emulator or connect a device.
-5. Press **Run**.
+3. Use Android Studio's Gradle sync, then select an emulator or connected device and press **Run**.
 
 **Requirements:** Android Studio with a compatible Android SDK and JDK 17 or newer.
 
 ### Build a debug APK
+
+Run the `:app:assembleDebug` Gradle task from Android Studio's Gradle tool window.
+
+**Wrapper note:** The original AI Studio export did not include `gradlew`, `gradlew.bat`, or `gradle-wrapper.jar`. If you want to build from a terminal using the wrapper, install a compatible Gradle version and generate the wrapper from the project root:
+
+```bash
+gradle wrapper --gradle-version 9.3.1
+```
+
+Then use:
 
 **Windows**
 ```bat
