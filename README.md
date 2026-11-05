@@ -1,99 +1,89 @@
 # 🍎 Orchard Catch
 
-### A little orchard, a basket, and a whole lot of falling fruit.
+### Catch the fruit. Keep the rhythm. Beat your best.
 
-Orchard Catch is a casual fruit-catching arcade game for Android. Move your basket, catch as many fruits as you can, beat your personal best, and see how long you can keep up as the game gets progressively faster.
+**Orchard Catch** is a landscape arcade game for Android. Move your basket from side to side, catch the fruit falling through a peaceful orchard, and see how long you can keep up as the pace gradually increases.
 
-Built around a peaceful orchard atmosphere, colourful fruit artwork, and a clean, modern interface, Orchard Catch aims to make a simple idea genuinely fun to play.
+It started as a simple idea: a small, relaxing game that is easy to pick up, satisfying to play, and polished enough to feel like its own little world.
 
-**Developed by TechVixx.**
+**Made by [TechVixx](https://github.com/TechVixx), with help from AI tools.**
 
 ---
 
-## 🎮 About the Game
+## 🎮 The game
 
-The idea is simple: fruits fall from above, and your job is to catch them using a basket.
-
-But don't get too comfortable. The longer you survive, the faster things get!
-
-Orchard Catch combines relaxed visuals with progressively challenging arcade gameplay. Whether you're playing for a quick break or trying to beat your highest score, there's always another fruit to catch.
+- Catch falling fruit with a horizontally controlled basket.
+- Earn points for each successful catch.
+- Keep your three lives for as long as possible.
+- React as the spawn rate and falling speed increase.
+- Try to beat your saved high score.
 
 ## ✨ Features
 
-- 🍓 **Fruit-catching gameplay** — Catch different fruits using a horizontally moving basket.
-- ⚡ **Progressive difficulty** — The game gradually becomes faster and more challenging.
-- 🏆 **Score & high score** — Earn points and try to beat your personal record.
-- ⏸️ **Pause system** — Pause, resume, restart, or return to the main menu.
-- 🌳 **Orchard atmosphere** — Enjoy colourful artwork and a peaceful natural background.
-- 🎵 **Audio experience** — Background music and sound effects.
-- 🎨 **Custom interface** — A modern visual identity with a distinctive design.
-- 📱 **Landscape gameplay** — Designed specifically for horizontal screens.
-- 🔌 **Offline-first experience** — Designed to work without requiring an internet connection.
+- **Landscape-first gameplay** designed for horizontal Android screens.
+- **Progressive difficulty** that builds as an active run continues.
+- **Multiple fruit types** with individual point values.
+- **Score and persistent best score** saved locally on the device.
+- **Pause, resume, restart, and game-over flow.**
+- **Music and sound effects** bundled with the app.
+- **Settings** for music, sound effects, and haptic feedback.
+- **Offline-first gameplay** with no account or cloud save required.
+- **Custom orchard visuals and UI** built for the game's own identity.
 
-## 🕹️ How to Play
+## 🧰 Built with
 
-1. Start a new game.
-2. Move the basket horizontally using your finger.
-3. Catch the falling fruits to earn points.
-4. Avoid missing fruits and losing all your lives.
-5. Survive as long as possible as the difficulty increases.
-6. Beat your high score!
+- Kotlin
+- Jetpack Compose
+- Android SDK
+- Gradle Kotlin DSL
+- Android `SharedPreferences` for local game settings and records
+- Android audio APIs for background music and sound effects
 
-Simple to understand, but surprisingly challenging once the fruits start falling faster.
+## 📱 Run it in Android Studio
 
-## 🛠️ Built With
+1. Download or clone this repository.
+2. Open the project root in Android Studio (the folder containing `settings.gradle.kts`).
+3. Let Android Studio sync the Gradle project.
+4. Select an Android emulator or connect a device.
+5. Press **Run**.
 
-This project was developed using Android development tools and AI-assisted development workflows.
+**Requirements:** Android Studio with a compatible Android SDK and JDK 17 or newer.
 
-The implementation and technologies are documented in the project source code.
+### Build a debug APK
 
-## 📲 Installation
-
-### Run through Android Studio
-
-1. Clone or download this repository.
-2. Open Android Studio.
-3. Select **Open** and choose the project folder.
-4. Allow Gradle synchronization to complete.
-5. Connect an Android device or start an emulator.
-6. Press **Run** to launch the application.
-
-### Build the APK
-
-**Windows:**
-```bash
+**Windows**
+```bat
 gradlew.bat assembleDebug
 ```
 
-**Linux / macOS:**
+**macOS / Linux**
 ```bash
 ./gradlew assembleDebug
 ```
 
-The debug APK is generally generated at:
+The APK is normally generated at:
 
 ```text
 app/build/outputs/apk/debug/app-debug.apk
 ```
 
-## A Note About AI Assistance
+## 🔌 Offline by design
 
-Orchard Catch was developed with the help of AI tools.
+The core game, artwork, music, sound effects, settings, and high-score storage are bundled or handled locally. You do not need an account, server, or cloud save to play.
 
-AI assistance was used during different parts of development, including coding, debugging, problem-solving, design exploration, and development iterations.
+Gradle may need an internet connection the first time it downloads Android build dependencies. That is a development/build-time requirement, not an in-game requirement.
 
-I believe AI can be a useful tool for learning, experimenting, and bringing ideas to life. However, the goal was never simply to generate an application and call it finished. The aim was to develop a game with its own identity and a genuinely enjoyable experience.
+## 🤖 A note on AI assistance
 
-Transparency matters, so I want to acknowledge that AI played a part in this project.
+AI tools helped during development with code generation, debugging, problem-solving, and design exploration. The project was then iterated on and assembled into the Android game by **TechVixx**.
+
+AI was part of the development process, and it deserves an honest mention. The goal was to use it as a tool to help bring the game idea to life—not to hide how the project was made.
 
 ## 👨‍💻 Developer
 
-**TechVixx**
-
-Created with curiosity, experimentation, and a lot of iterations.
+**TechVixx**  
+GitHub: [@TechVixx](https://github.com/TechVixx)
 
 ---
 
-*Thanks for checking out Orchard Catch! 🍎*
-
-If you try the game, I hope you enjoy playing it as much as I enjoyed bringing the idea to life.
+Thanks for stopping by. Hope you enjoy a round of Orchard Catch! 🍊
